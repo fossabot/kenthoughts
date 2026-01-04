@@ -1,0 +1,70 @@
+/**
+ * Custom VitePress theme styles
+ * Migrated from Gatsby typography and custom styles
+ */
+
+/* Import fonts first */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+:root {
+  --vp-c-brand-1: #646cff;
+  --vp-c-brand-2: #747bff;
+  --vp-c-brand-3: #535bf2;
+  
+  /* Custom colors from original site */
+  --color-highlight: #007acc;
+}
+
+/**
+ * Global wrapper styles
+ */
+.vp-doc {
+  max-width: 48rem !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Blog post list styling */
+.post-list-item {
+  margin-bottom: 2rem;
+}
+
+.post-list-item h2 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.post-list-item header small {
+  color: var(--vp-c-text-2);
+}
+
+/* Typography adjustments */
+body {
+  font-family: 'Merriweather', Georgia, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Links */
+a {
+  color: var(--color-highlight);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Code blocks */
+.vp-code-group {
+  margin: 1.5rem 0;
+}
+
+/* Footer customization */
+.VPFooter {
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 2rem;
+  margin-top: 4rem;
+}
