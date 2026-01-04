@@ -1,4 +1,22 @@
+# VitePress build outputs
+.vitepress/cache
+.vitepress/dist
 node_modules/
+
+# Old Gatsby files (can be removed after migration verified)
 .cache/
-public
 src/gatsby-types.d.ts
+
+# Temporary files
+*.log
+.DS_Store
+.env
+.env.local
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea

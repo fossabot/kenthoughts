@@ -1,49 +1,58 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal TypeScript Starter
-</h1>
+# Ken Thoughts - VitePress
+
+Ken Lee's personal blog, now powered by VitePress.
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+```bash
+# Install dependencies
+npm install
 
-    Use the Gatsby CLI to create a new site, specifying the minimal TypeScript starter.
+# Start dev server
+npm run dev
 
-    ```shell
-    # create a new Gatsby site using the minimal TypeScript starter
-    npm init gatsby -- -ts
-    ```
+# Build for production
+npm run build
 
-2.  **Start developing.**
+# Preview production build
+npm run preview
+```
 
-    Navigate into your new site’s directory and start it up.
+## 📁 Project Structure
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+```
+.
+├── .vitepress/          # VitePress configuration
+│   ├── config.mts       # Site configuration
+│   └── theme/           # Custom theme
+├── blog/                # Blog posts (converted from content/blog)
+├── me/                  # About page
+├── public/              # Static assets
+└── index.md             # Home page
+```
 
-3.  **Open the code and start customizing!**
+## 🔄 Migration from Gatsby
 
-    Your site is now running at http://localhost:8000!
+This site was migrated from Gatsby to VitePress. Key changes:
 
-    Edit `src/pages/index.tsx` to see your site update in real-time!
+- **React → Vue**: Components converted from React/TSX to Vue
+- **MDX → Markdown**: Blog posts converted from MDX to standard Markdown
+- **GraphQL → File-based**: Content loading uses VitePress's built-in content loader
+- **Simpler structure**: Eliminated complex Gatsby plugins and configuration
 
-4.  **Learn more**
+## ✍️ Content
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter-ts)
+- Blog posts are in the `blog/` directory
+- Each post has frontmatter with `title`, `date`, `description`, and optional `draft` flag
+- Posts marked as `draft: true` won't appear in the blog list
 
-## 🚀 Quick start (Netlify)
+## 🛠 Tech Stack
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+- **VitePress**: Static site generator
+- **Vue 3**: UI framework
+- **TypeScript**: Type safety
+- **Vite**: Build tool
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal-ts)
+## 📄 License
+
+MIT
