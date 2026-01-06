@@ -1,4 +1,6 @@
 # Ken Thoughts - VitePress
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FKenLSM%2Fkenthoughts.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FKenLSM%2Fkenthoughts?ref=badge_shield)
+
 
 Ken Lee's personal blog, now powered by VitePress.
 
@@ -56,3 +58,6 @@ This site was migrated from Gatsby to VitePress. Key changes:
 ## 📄 License
 
 MIT
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FKenLSM%2Fkenthoughts.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FKenLSM%2Fkenthoughts?ref=badge_large)
